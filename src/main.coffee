@@ -33,8 +33,8 @@ class Benchmark
       return
 
     .catch (err) ->
-      console.log(err)
-      sys.exit(1)
+      console.log(err.stack)
+      process.exit(1)
 
 bench = new Benchmark()
 
